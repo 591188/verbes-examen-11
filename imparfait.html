@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Quiz infini imparfait (examen du 11ᵉ)</title>
+</head>
+<body>
+    <h1>Pratique: l’imparfait</h1>
+    <h2>Pratique infinie</h2>
+    <p class="instructions">Conjuguez le verbe à l’imparfait et cliquez sur « Verifier », ou poussez Enter sur votre clavier. Si vous avez raison, la question changera.
+    <div class="box-center" id="quiz-box">
+        <label><span id="question-out"></span>
+            <input type="text" id="response-in" size="25">
+        </label>
+        <button id="check-button" onclick="check_answer();">Verifier (ou poussez Enter)</button>
+        <br>
+        <p id="feedback-out"><br>
+    </div>
+    <p class="by">Par Ian G.
+    <br><br>
+    <button id="listing-button"></button>
+    <div id="conj-listing"></div>
+    
+    <script src="imparfait.js"></script>
+    <script src="listing.js"></script>
+</body>
+</html>
