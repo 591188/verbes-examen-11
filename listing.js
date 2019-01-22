@@ -4,10 +4,11 @@ function list_conjs() {
     console.log("Listing conjugations.")
     var listing = document.getElementById("conj-listing"),
         old_q = current_question;
-    for (var verbe of verbes) {
+    for (var i = 0; i < verbes.length; ++i) {
+        var verbe = verbes[i], num = i + 1;
         var style = "text-transform: capitalize; text-decoration: underline;",
-            span = "<span style=\"" + style + "\">" + verbe + '</span>';
-        listing.insertAdjacentHTML("beforeend", span + "<br>")
+            verb_html = num + ". " + "<span style=\"" + style + "\">" + verbe + "</span><br>";
+        listing.insertAdjacentHTML("beforeend", verb_html)
         for (var sujet of sujets) {
             if (sujet === SUJET_ON) continue; // Redundant
             set_question(sujet, verbe);
