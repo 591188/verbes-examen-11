@@ -41,4 +41,5 @@ input, button {
     padding: 10 px;
     width: 40%;
     min-width: 30em;
+    columns: 8em;
 }
